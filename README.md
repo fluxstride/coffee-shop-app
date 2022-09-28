@@ -1,36 +1,52 @@
-# Coffee Shop Full Stack
+# **Coffee shop fullstack app**
 
-## Full Stack Nano - IAM Final Project
+Coffee shop fullstack app is an app where you can find different types of coffee/drinks.
 
-Udacity has decided to open a new digitally enabled cafe for students to order drinks, socialize, and study hard. But they need help setting up their menu experience.
+#
 
-You have been called on to demonstrate your newly learned skills to create a full stack drink menu application. The application must:
+#
 
-1. Display graphics representing the ratios of ingredients in each drink.
-2. Allow public users to view drink names and graphics.
-3. Allow the shop baristas to see the recipe information.
-4. Allow the shop managers to create new drinks and edit existing drinks.
+## **Getting Started**
 
-## Tasks
+### **Install Dependencies and run**
 
-There are `@TODO` comments throughout the project. We recommend tackling the sections in order. Start by reading the READMEs in:
+Run the commands below to install all the required dependencies to successfully run the app
 
-1. [`./backend/`](./backend/README.md)
-2. [`./frontend/`](./frontend/README.md)
+### **Backend**
 
-## About the Stack
+```bash
+cd backend
+pip install -r requirements.txt
+```
 
-We started the full stack application for you. It is designed with some key functional areas:
+#### **Start up the project**
 
-### Backend
+```bash
+cd src
+export FLASK_APP=api.py
+flask run --reload
+```
 
-The `./backend` directory contains a partially completed Flask server with a pre-written SQLAlchemy module to simplify your data needs. You will need to complete the required endpoints, configure, and integrate Auth0 for authentication.
+**Base URL:**
 
-[View the README.md within ./backend for more details.](./backend/README.md)
+#### `http://localhost:5000`
 
-### Frontend
+#
 
-The `./frontend` directory contains a complete Ionic frontend to consume the data from the Flask server. You will only need to update the environment variables found within (./frontend/src/environment/environment.ts) to reflect the Auth0 configuration details set up for the backend app.
+### **Frontend**
 
-[View the README.md within ./frontend for more details.](./frontend/README.md)
-# coffee-shop-app
+```bash
+cd frontend
+npm install -g @ionic/cli
+npm install
+```
+
+#### **Start up the project**
+
+```bash
+ionic serve
+```
+
+**Base URL:**
+
+#### `http://localhost:3000`
